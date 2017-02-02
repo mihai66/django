@@ -10,8 +10,8 @@ DEBUG = os.environ.get('DEBUG', 'true') != 'false'
 SQL_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [
-    'latest.oscarcommerce.com',
-    'master.oscarcommerce.com',
+    '192.168.100.2',
+    'luckystrike.go.ro',
     'localhost',
 ]
 
@@ -270,7 +270,6 @@ INSTALLED_APPS = [
     'django_extensions',
 
     # Debug toolbar + extensions
-    'debug_toolbar',
     'apps.gateway',     # For allowing dashboard access
     'widget_tweaks',
 ] + oscar.get_core_apps()

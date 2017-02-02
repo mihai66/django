@@ -1,0 +1,50 @@
+#upstream oscar {
+  # fail_timeout=0 means we always retry an upstream even if it failed
+  # to return a good HTTP response (in case the Unicorn master nukes a
+  # single worker for timing out).
+
+ # server unix:/home/apps/django-oscar/sites/sandbox/gunicorn.sock fail_timeout=0;
+#}
+
+
+server {
+     listen 0.0.0.0:80;
+     listen 0.0.0.0:443 ssl;
+     server_name luckystrike.go.ro;
+ 
+#     if ($ssl_protocol = "") {
+#     rewrite ^ https://$server_name$request_uri? permanent;
+#    }
+#     ssl_certificate /etc/ssl/private/wildcard.cegeka.be.crt;
+#     ssl_certificate_key /etc/ssl/private/wildcard.cegeka.be.key;
+#     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+ 
+     root /home/apps/django-oscar/sites/sandbox;
+ 
+     location /static {
+         alias /home/apps/django-oscar/sites/sandbox/public/static/;
+         if ($query_string) {
+             expires max;
+         }
+     }
+    location /media {
+       alias /home/apps/django-oscar/sites/sandbox/public/media;
+    }
+
+    location /favicon.ico {
+        alias /home/apps/django-oscar/sites/sandbox/favicon.ico;
+        expires max;
+    }
+
+    location / {
+         proxy_connect_timeout 30;
+         proxy_pass http://127.0.0.1:8000;
+         proxy_pass_header Server;
+         proxy_read_timeout 30;
+         proxy_redirect off;
+         proxy_set_header Host $http_host;
+         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+         proxy_set_header X-Real-IP $remote_addr;
+         proxy_set_header X-Scheme $scheme;
+     }
+ }
