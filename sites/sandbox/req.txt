@@ -1,0 +1,44 @@
+django-oscar-payu         - django-oscar-payu. An Oscar package for integration with payu payment gateway
+django-oscar-paypal-fork-b74153f - Integration with PayPal Express, PayPal Payflow Pro and Adaptive Payments for django-oscar
+django-oscar-mpesa        - Oscar integration for M-Pesa's IPN service.
+django-oscar-unicredit    - A plugin to pay with unicredit bank
+django-oscar-pagseguro    - Pagseguro integration for django-oscar
+django-oscar-bluelight    - Bluelight Specials - Enhancements to the offer and vouchers features for Django Oscar.
+django-oscar-wagtail      - Integration between Django Oscar and Wagtail
+django-oscar-easyrec      - easyrec recommendations module for django-oscar
+django-oscar-datacash     - Datacash payment module for django-oscar
+django-oscar-approval     - Order approval module for django-oscar
+django-oscar-vat_moss     - EU VATMOSS support for django-oscar
+django-oscar              - A domain-driven e-commerce framework for Django
+  INSTALLED: 1.3 (latest)
+django-oscar-worldpay     - Integration with Worldpay payments for django-oscar
+django-leonardo           - A platform for fast building modern web applications with Django, FeinCMS, Horizon, Oscar and tons of another apps.
+cmsplugin-markdown        - A plugin for django-cms that aims to replace the standard text plugin with it's
+WYSIWYG editors. With cmsplugin-markdown you can write your content in Markdown
+using EpicEditor (http://oscargodson.github.com/EpicEditor/)
+django-oscar-cch          - Integration between django-oscar and the CCH Sales Tax Office SOAP API.
+django-oscar-cybersource  - Integration between django-oscar and the Cybersource Secure Acceptance.
+django-oscar-api-checkout - An extension on top of django-oscar-api providing a more flexible checkout API with a pluggable payment methods interface.
+django-oscar-amazon-payments - This package provides integration between django-oscar and Amazon Payments (Login and Pay with Amazon).
+tableh                    - Tableh, taking the "Matt Damon - Oscar Winning actor"                  out of "Mahhttt Dahhmonnn.
+oscar-sagepay             - SagePay payment module for django-oscar
+django-oscar-eurotaxes    - Package to manage taxes with django-oscar if the company must accomplish the European Laws of Taxes
+django-oscar-api          - REST API module for django-oscar
+djangocms-oscar           - django CMS plugin for Oscar
+django-oscar-adyen        - Adyen HPP payment module for django-oscar
+django-oscar-asiapay      - Payment integration of AsiaPay (PayDollar) to use on django-oscar
+django-oscar-wfrs         - An extension on-top of django-oscar-accounts to allow interfacing with Wells Fargo Retail Services.
+django-oscar-avalara      - Avalara integration for django-oscar
+django-oscar-sagepay      - This package provides integration between django-oscar and the payment gateway SagePay UK
+django-oscar-docdata      - Docdata Payments Gateway integration for django-oscar
+django-oscar-eway         - eWay payment module for django-oscar (Rapid 3.0)
+django-oscar-accounts-wt  - Managed accounts for django-oscar
+django-oscar-accounts     - Managed accounts for django-oscar
+django-oscar-stores       - An extension for Oscar to include stores
+django-oscar-facebook     - A plugin for integrating domain-driven e-commerce framework Oscar with Facebook
+django-oscar-paypal       - Integration with PayPal Express, PayPal Payflow Pro and Adaptive Payments for django-oscar
+django-oscar-paymentexpress - PaymentExpress payment module for django-oscar
+django-oscar-telegram-bot - Telegram Bot for Oscar shops
+django-oscar-testsupport  - Testing utilities for Oscar
+django-oscar-bundles      - An extension on top of django-oscar providing product bundle functionality.
+oscar.flag                - Configuration flags for libraries and applications.

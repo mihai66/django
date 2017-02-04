@@ -1,8 +1,9 @@
 #!/bin/bash
 
 NAME="oscar"                                  # Name of the application
-DJANGODIR=/home/apps/django-oscar/sites/sandbox             # Django project directory
-SOCKFILE=/home/apps/django-oscar/sites/sandbox/gunicorn.sock  # we will communicte using this unix socket
+PIDFILE=/home/apps/django/gunicorn.pid
+DJANGODIR=/home/apps/django/sites/sandbox             # Django project directory
+SOCKFILE=/home/apps/django/sites/sandbox/gunicorn.sock  # we will communicte using this unix socket
 USER=apps                                        # the user to run as
 GROUP=apps
 ADDRESS=127.0.0.1:8000                                     # the group to run as
@@ -29,5 +30,6 @@ exec  /home/apps/.virtualenvs/oscar/bin/gunicorn ${DJANGO_WSGI_MODULE}:applicati
   --workers $NUM_WORKERS \
   --user=$USER --group=$GROUP \
   --bind=$ADDRESS \
+  --pid $PIDFILE \
   --log-level=debug \
-  --log-file=/home/apps/django-oscar/sites/sandbox/gunicorn.log
+  --log-file=/home/apps/django/sites/sandbox/gunicorn.log

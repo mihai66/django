@@ -6,9 +6,9 @@ from settings import *  # noqa
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'oscar_travis',
-        'USER': 'travis',
-        'PASSWORD': '',
+        'NAME': 'oscar',
+        'USER': 'apps',
+        'PASSWORD': 'apps',
         'HOST': 'localhost',
         'PORT': '',
     }
